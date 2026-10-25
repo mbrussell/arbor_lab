@@ -1,0 +1,143 @@
+---
+title: "Arbor Lab 01: Allometric equations used to predict tree carbon"
+author: "Matt Russell"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r}
+# Install packages to use
+library(tidyverse)
+library(usmap)
+library(readxl)
+
+# Set working directory here
+setwd("")
+```
+
+```{r}
+# We're using Forest Inventory and Analysis data from New York State
+# # Read in stand data
+stand <- read_csv("data/fia_stand.csv") 
+
+# Read in tree data, keeping only live trees
+tree <- read_csv("data/fia_tree.csv") |> 
+  filter(STATUSCD == 1)
+```
+
+```{r}
+# Get forest type in tree table
+tree <- tree |> 
+  inner_join(stand |> select(STATECD, COUNTYCD, PLOT, forest_type), by = c("STATECD", "COUNTYCD", "PLOT"))
+```
+
+Merge to species-level table
+```{r}
+# Add Jenkins coefficients for species-level prediction (For Jenkins and CRM methods)
+spp <- read_csv("data/REF_SPECIES_JENKINS.csv")
+
+tree <- inner_join(tree, spp, by = "SPCD") 
+
+# Add carbon content (C) of each species
+spp_c <- read_csv("data/REF_SPECIES.csv") |> 
+  select(SPCD, CARBON_RATIO_LIVE)
+
+tree <- inner_join(tree, spp_c, by = "SPCD") 
+```
+
+
+```{r}
+# Load biomass/carbon functions from Jenkins et al. 2003
+source("eqns/jenkins.R")
+
+# Load biomass/carbon functions from CRM method
+## Load CRM functions
+source("eqns/crm.R")
+
+## Apply CRM functions
+source("eqns/crm_ne.R")
+```
+
+```{r}
+## Predict carbon for three methods (in kg C/tree)
+tree <- tree |> 
+  rowwise() |> 
+  mutate(
+    # Estimate carbon using Jenkins
+         agb_jenkins = jenkins(JENKINS_TOTAL_B1 = JENKINS_TOTAL_B1, 
+                               JENKINS_TOTAL_B2 = JENKINS_TOTAL_B2, 
+                               DBH = DIA),
+         bgb_jenkins = jenkins_root(JENKINS_ROOT_RATIO_B1 = JENKINS_ROOT_RATIO_B1, 
+                               JENKINS_ROOT_RATIO_B2 = JENKINS_ROOT_RATIO_B2, 
+                               DBH = DIA,
+                               agb_jenkins = agb_jenkins),
+         carbon_ag_jenkins = agb_jenkins * CARBON_RATIO_LIVE,
+         carbon_bg_jenkins = bgb_jenkins * CARBON_RATIO_LIVE,
+    
+    # Estimate carbon using CRM
+         carbon_ag_crm = BIOMASS_AG_CRM * CARBON_RATIO_LIVE * 0.45359237,
+         carbon_bg_crm = BIOMASS_BG_CRM * CARBON_RATIO_LIVE * 0.45359237,
+
+    # Estimate carbon using NSVB
+    # For this, we can use the CARBON_AG and CARBON_BG columns from the FIA TREE table
+         carbon_ag_nsvb = CARBON_AG * 0.45359237,
+         carbon_bg_nsvb = CARBON_BG * 0.45359237,
+
+    # Calculate total carbon (above + belowground) for each method
+         carbon_total_jenkins = carbon_ag_jenkins + carbon_bg_jenkins,
+         carbon_total_crm = carbon_ag_crm + carbon_bg_crm,
+         carbon_total_nsvb = carbon_ag_nsvb + carbon_bg_nsvb
+         )
+```
+
+```{r}
+# Plot comparisons of carbon estimates for each method
+# Jenkins vs CRM
+ggplot(data = tree, aes(x = carbon_total_jenkins, y = carbon_total_crm)) +
+  geom_point() +
+  geom_abline(slope = 1, intercept = 0, linetype = "dashed") +
+  geom_smooth(se = F) +
+  facet_wrap(~ forest_type) +
+  labs(x = "Jenkins estimate (kg C/tree)",
+       y = "CRM estimate (kg C/tree)") +
+  theme_bw()
+
+# Jenkins vs NSVB
+ggplot(data = tree, aes(x = carbon_total_nsvb, y = carbon_total_jenkins)) +
+  geom_point() +
+  geom_abline(slope = 1, intercept = 0, linetype = "dashed") +
+  geom_smooth(se = F) +
+  facet_wrap(~ forest_type) +
+  labs(x = "NSVB estimate (kg C/tree)",
+       y = "Jenkins estimate (kg C/tree)") +
+  theme_bw()
+
+# NSVB vs CRM
+ggplot(data = tree, aes(x = carbon_total_nsvb, y = carbon_total_crm)) +
+  geom_point() +
+  geom_abline(slope = 1, intercept = 0, linetype = "dashed") +
+  geom_smooth(se = F) +
+  facet_wrap(~ forest_type) +
+  labs(x = "NSVB estimate (kg C/tree)",
+       y = "CRM estimate (kg C/tree)") +
+  theme_bw()
+```
+
+```{r}
+# Calculate mean difference by forest type group
+mean_diff <- tree |> 
+  group_by(forest_type) |> 
+  summarize(
+n_trees = n(),
+    mean_diff_jenkins_crm = mean(carbon_total_jenkins - carbon_total_crm),
+    mean_diff_nsvb_crm = mean(carbon_total_nsvb - carbon_total_crm),
+    mean_diff_nsvb_jenkins = mean(carbon_total_nsvb - carbon_total_jenkins)
+  )
+mean_diff
+```
+
+```{r}
+# Write data table to use in the future
+write_csv(tree, "data/fia_tree_carbon.csv")
+```
+

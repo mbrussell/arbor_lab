@@ -1,0 +1,155 @@
+PLT_CN,INVYR,STATECD,UNITCD,COUNTYCD,PLOT,CONDID,COND_STATUS_CD,COND_NONSAMPLE_REASN_CD,RESERVCD,OWNCD,OWNGRPCD,ADFORCD,FORTYPCD,FLDTYPCD,MAPDEN,STDAGE,STDSZCD,FLDSZCD,SITECLCD,SICOND,SIBASE,SISP,STDORGCD,STDORGSP,ECOSUBCD,LAT,LON,FORTYPCD_NAME,FORTYPGRPCD,FORTYPGRPCD_NAME,region,forest_type
+1543492699290487,2025,36,8,87,5621,1,1,NA,1,31,30,NA,502,502,1,99,1,3,5,70,50,832,0,NA,221Ae,41.183845,-74.099271,Chestnut oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+816199717290487,2022,36,8,105,3085,1,1,NA,1,31,30,NA,503,409,1,96,1,3,5,57,50,129,0,NA,211Fc,41.512924,-74.621389,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+816199957290487,2022,36,4,31,1781,1,1,NA,1,31,30,NA,124,121,1,86,2,2,6,60,50,375,0,NA,M211Df,44.107314,-73.781857,Red spruce / balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+1287127746290487,2024,36,8,95,202,1,1,NA,0,46,40,NA,502,502,1,122,1,3,5,53,50,129,0,NA,211Ib,42.530609,-74.428802,Chestnut oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1543492258290487,2025,36,8,71,6530,1,1,NA,0,46,40,NA,503,503,1,66,1,3,4,75,50,837,0,NA,221Ba,41.389007,-74.272854,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1543492361290487,2025,36,1,33,3060,1,1,NA,0,46,40,NA,121,124,1,59,3,2,4,49,50,12,0,NA,M211Da,44.504521,-74.522443,Balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+1543492535290487,2025,36,4,31,2016,1,1,NA,1,31,30,NA,124,124,1,97,2,2,4,50,50,97,0,NA,M211Df,44.136709,-73.865453,Red spruce / balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+1191496055290487,2023,36,8,79,2734,1,1,NA,0,46,40,NA,505,520,1,87,1,3,5,87,50,541,0,NA,221Ae,41.462629,-73.712591,Northern red oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1287127828290487,2024,36,8,27,5144,1,1,NA,0,46,40,NA,505,505,1,155,1,3,5,57,50,833,0,NA,221Ae,41.632163,-73.617498,Northern red oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1287127875290487,2024,36,8,71,425,1,1,NA,1,31,30,NA,503,502,1,138,1,3,5,60,50,833,0,NA,221Ae,41.194001,-74.271574,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1287127440290487,2024,36,8,111,5541,1,1,NA,0,46,40,NA,505,502,1,82,1,3,5,59,50,833,0,NA,211Ib,42.096074,-73.994068,Northern red oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1287127762290487,2024,36,8,105,3652,1,1,NA,0,46,40,NA,503,520,1,77,1,3,6,63,50,316,0,NA,211Fc,41.564903,-74.91884,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1287127443290487,2024,36,8,111,5402,1,1,NA,0,46,40,NA,503,503,1,103,1,3,5,62,50,837,0,NA,221Ba,41.788065,-74.034615,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1287127187290487,2024,36,8,103,3400,1,1,NA,1,32,30,NA,503,510,1,88,1,3,4,77,50,806,0,NA,221An,41.013926,-72.23756,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1287127190290487,2024,36,3,49,1186,1,1,NA,0,31,30,NA,122,124,1,108,2,2,5,41,50,94,0,NA,211Jb,43.725982,-75.652801,White spruce,120,Spruce / fir group,Adirondacks,Spruce-fir
+1287127876290487,2024,36,8,111,8216,1,1,NA,1,31,30,NA,505,502,1,82,1,3,4,81,50,833,0,NA,221Bd,41.734763,-74.240336,Northern red oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1191495699290487,2023,36,8,71,2650,1,1,NA,0,46,40,NA,503,520,1,95,1,3,5,76,50,832,0,NA,211Fc,41.426764,-74.672009,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1287127627290487,2024,36,3,43,1701,1,1,NA,0,46,40,NA,124,124,1,76,1,2,5,71,50,746,0,NA,M211Db,43.357326,-74.990499,Red spruce / balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+1287127484290487,2024,36,8,105,4257,1,1,NA,0,46,40,NA,503,519,1,92,1,3,5,74,50,833,0,NA,211Fc,41.615615,-74.511486,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1287127673290487,2024,36,1,89,2062,1,1,NA,0,46,40,NA,121,124,1,32,2,2,4,57,50,12,0,NA,M211Da,44.327159,-74.667526,Balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+1287127458290487,2024,36,8,95,4151,1,1,NA,0,46,40,NA,503,503,1,52,1,2,4,75,50,833,0,NA,211Ib,42.582945,-74.232649,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1287127221290487,2024,36,8,105,6137,1,1,NA,0,46,40,NA,503,401,1,132,1,3,5,67,50,832,0,NA,211Fc,41.49128,-74.805564,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1287127437290487,2024,36,8,105,2548,1,1,NA,0,46,40,NA,504,503,1,106,1,3,5,71,50,833,0,NA,211Fc,41.503574,-74.951218,White oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1543492238290487,2025,36,4,31,2105,1,1,NA,1,31,30,NA,121,121,1,90,1,2,5,41,50,12,0,NA,M211Df,44.056118,-73.755193,Balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+816199432290487,2022,36,8,5,1378,1,1,NA,1,32,30,NA,520,901,1,84,1,3,5,63,50,833,0,NA,221Ae,40.875602,-73.807521,Mixed upland hardwoods,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+816199776290487,2022,36,3,43,4763,1,1,NA,0,32,30,NA,124,124,1,60,3,2,5,65,50,71,0,NA,M211Dc,43.69228,-74.971929,Red spruce / balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+816200099290487,2022,36,8,71,60,1,1,NA,1,31,30,NA,515,515,1,118,1,3,4,77,50,833,0,NA,221Ae,41.306301,-74.051927,Chestnut oak / black oak / scarlet oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+816199636290487,2022,36,1,33,468,1,1,NA,0,46,40,NA,123,123,1,66,1,2,4,55,50,97,0,NA,M211Da,44.447312,-74.475322,Red spruce,120,Spruce / fir group,Adirondacks,Spruce-fir
+816200087290487,2022,36,8,59,3833,1,1,NA,1,32,30,NA,513,513,1,47,2,2,5,66,50,901,0,NA,221An,40.825127,-73.664797,Black locust,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+816199692290487,2022,36,8,71,1872,1,1,NA,1,31,30,NA,505,505,1,141,1,3,5,81,50,832,0,NA,221Ae,41.424988,-73.98097,Northern red oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+816199654290487,2022,36,4,31,6617,1,1,NA,1,31,30,NA,124,902,1,79,2,2,5,38,50,97,0,NA,M211Df,44.253724,-73.702373,Red spruce / balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+816200105290487,2022,36,8,103,8426,1,1,NA,0,32,30,NA,503,504,1,82,1,3,5,63,50,806,0,NA,221An,40.861668,-72.579714,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+816199695290487,2022,36,8,71,6087,1,1,NA,0,46,40,NA,503,520,1,68,1,3,4,76,50,833,0,NA,221Ae,41.234667,-74.326645,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+816199843290487,2022,36,1,33,4057,1,1,NA,1,31,30,NA,123,124,1,97,1,3,3,61,50,97,0,NA,M211Dc,44.759991,-74.036346,Red spruce,120,Spruce / fir group,Adirondacks,Spruce-fir
+1191495742290487,2023,36,4,41,1851,1,1,NA,1,31,30,NA,124,124,1,78,2,3,4,49,50,97,0,NA,M211Dd,43.696491,-74.736649,Red spruce / balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+1287127459290487,2024,36,8,39,573,1,1,NA,0,46,40,NA,503,520,1,88,1,2,5,57,50,833,0,NA,211Ia,42.355598,-74.194164,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1543492272290487,2025,36,8,111,2223,1,1,NA,0,46,40,NA,503,520,1,110,1,3,4,84,50,833,0,NA,221Bd,41.766479,-74.197163,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1543492662290487,2025,36,8,71,1475,1,1,NA,0,46,40,NA,502,502,1,79,2,2,5,57,50,806,0,NA,221Bd,41.343255,-74.654758,Chestnut oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1543492702290487,2025,36,8,103,558,1,1,NA,1,31,30,NA,504,504,1,76,2,2,6,52,50,837,0,NA,221An,41.021327,-72.007198,White oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1543492596290487,2025,36,1,19,924,1,1,NA,0,46,40,NA,121,121,1,62,2,2,4,49,50,12,0,NA,M211Dc,44.823768,-73.941193,Balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+1543492601290487,2025,36,1,33,408,1,1,NA,0,46,40,NA,121,121,1,41,2,2,4,66,50,125,0,NA,M211Dc,44.668422,-74.040396,Balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+1191495695290487,2023,36,8,105,340,1,1,NA,0,46,40,NA,505,502,1,94,1,3,6,61,50,832,0,NA,211Fc,41.574881,-74.577292,Northern red oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1191495678290487,2023,36,8,111,4604,1,1,NA,0,46,40,NA,520,515,1,88,1,3,5,73,50,832,0,NA,221Ba,41.641121,-74.347855,Mixed upland hardwoods,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1543492332290487,2025,36,4,41,1567,1,1,NA,0,46,40,NA,123,124,1,33,3,1,4,47,50,12,0,NA,M211Dc,43.897588,-74.75672,Red spruce,120,Spruce / fir group,Adirondacks,Spruce-fir
+1543492049290487,2025,36,8,71,2879,1,1,NA,0,32,30,NA,503,503,1,130,1,3,6,62,50,802,0,NA,221Ae,41.221703,-74.21555,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+511169451126144,2019,36,4,41,4466,1,1,NA,1,31,30,NA,123,123,1,120,1,3,3,70,50,97,0,NA,M211Dd,43.498913,-74.707949,Red spruce,120,Spruce / fir group,Adirondacks,Spruce-fir
+511169438126144,2019,36,1,33,4274,1,1,NA,1,31,30,NA,124,124,1,93,1,3,3,58,50,97,0,NA,M211Dc,44.474275,-74.219054,Red spruce / balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+511169319126144,2019,36,8,111,6389,1,1,NA,1,31,30,NA,503,520,1,102,1,3,5,71,50,833,0,NA,221Ba,41.680599,-74.272338,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+511169446126144,2019,36,4,41,1408,1,1,NA,1,31,30,NA,124,121,1,75,1,3,4,56,50,12,0,NA,M211Dd,43.787321,-74.48954,Red spruce / balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+511169411126144,2019,36,4,31,2802,1,1,NA,1,31,30,NA,121,121,1,79,2,2,5,37,50,12,0,NA,M211Df,44.13802,-74.073111,Balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+511169483126144,2019,36,3,43,6558,1,1,NA,1,31,30,NA,123,123,1,77,2,2,4,51,50,97,0,NA,M211Db,43.53264,-75.031413,Red spruce,120,Spruce / fir group,Adirondacks,Spruce-fir
+511169281126144,2019,36,8,27,5102,1,1,NA,0,46,40,NA,507,520,1,73,1,3,3,95,50,833,0,NA,221Bb,41.717051,-73.698645,Sassafras / persimmon,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+511169473126144,2019,36,1,33,876,1,1,NA,0,31,30,NA,125,125,1,76,2,2,3,58,50,95,0,NA,M211Dc,44.700152,-74.193315,Black spruce,120,Spruce / fir group,Adirondacks,Spruce-fir
+511169283126144,2019,36,8,79,6423,1,1,NA,1,31,30,NA,505,502,1,83,1,3,5,60,50,833,0,NA,221Ae,41.441643,-73.912366,Northern red oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+511169746126144,2019,36,8,27,5917,1,1,NA,0,46,40,NA,519,708,1,68,1,3,5,73,50,316,0,NA,221Ba,41.675294,-73.861465,Red maple / oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+511169804126144,2019,36,8,95,41,1,1,NA,0,46,40,NA,505,519,1,77,1,3,5,70,50,833,0,NA,211Ib,42.678963,-74.646944,Northern red oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+511169748126144,2019,36,8,71,1462,1,1,NA,0,31,30,NA,503,519,1,67,1,3,4,80,50,806,0,NA,221Ba,41.482228,-74.180216,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+511169842126144,2019,36,1,19,2389,1,1,NA,1,31,30,NA,127,127,1,107,1,2,5,42,50,241,0,NA,M211Dc,44.712033,-73.981876,Northern white-cedar,120,Spruce / fir group,Adirondacks,Spruce-fir
+511169885126144,2019,36,1,89,804,1,1,NA,0,46,40,NA,123,123,1,54,3,2,3,56,50,97,0,NA,M211Da,44.31272,-74.809221,Red spruce,120,Spruce / fir group,Adirondacks,Spruce-fir
+511169755126144,2019,36,8,39,1063,1,1,NA,0,46,40,NA,505,505,1,98,1,3,5,63,50,833,0,NA,211Ib,42.250869,-74.021088,Northern red oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+511169863126144,2019,36,1,89,1566,1,1,NA,1,31,30,NA,123,105,1,129,1,3,4,52,50,97,0,NA,M211Da,44.373307,-74.584434,Red spruce,120,Spruce / fir group,Adirondacks,Spruce-fir
+611077265126144,2020,36,8,103,2113,1,1,NA,1,32,30,NA,503,510,1,74,2,2,5,58,50,806,0,NA,221An,41.03017,-71.981756,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+611077586126144,2020,36,1,33,3644,1,1,NA,1,31,30,NA,127,104,1,113,1,3,4,77,50,129,0,NA,M211Dc,44.264123,-74.288849,Northern white-cedar,120,Spruce / fir group,Adirondacks,Spruce-fir
+611077340126144,2020,36,8,27,4285,1,1,NA,1,31,30,NA,503,520,1,89,1,3,5,72,50,833,0,NA,221Ba,41.851736,-73.929274,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+611077535126144,2020,36,4,31,2565,1,1,NA,0,46,40,NA,121,121,1,60,3,2,5,42,50,12,0,NA,M211Dd,43.936298,-73.956105,Balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+611077379126144,2020,36,8,111,1693,1,1,NA,0,31,30,NA,502,502,1,78,1,3,6,51,50,833,0,NA,221Bd,41.665797,-74.415519,Chestnut oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+611077381126144,2020,36,8,105,6170,1,1,NA,0,31,30,NA,502,502,1,66,2,2,6,36,50,806,0,NA,221Bd,41.588027,-74.458523,Chestnut oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+611077576126144,2020,36,1,19,3694,1,1,NA,0,31,30,NA,121,121,1,86,1,3,4,54,50,12,0,NA,M211Dc,44.764585,-73.756947,Balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+611077592126144,2020,36,4,41,5424,1,1,NA,1,31,30,NA,124,124,1,38,2,2,4,48,50,12,0,NA,M211Dd,43.765077,-74.631801,Red spruce / balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+611077631126144,2020,36,1,33,5974,1,1,NA,0,46,40,NA,123,123,1,76,1,3,3,57,50,97,0,NA,M211Da,44.439269,-74.544208,Red spruce,120,Spruce / fir group,Adirondacks,Spruce-fir
+611077593126144,2020,36,4,41,6712,1,1,NA,1,31,30,NA,123,123,1,67,2,3,4,48,50,97,0,NA,M211Dd,43.692479,-74.69325,Red spruce,120,Spruce / fir group,Adirondacks,Spruce-fir
+611077377126144,2020,36,8,111,1328,1,1,NA,0,46,40,NA,503,520,1,85,1,3,4,75,50,129,0,NA,211Fc,41.881532,-74.277141,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+611077427126144,2020,36,8,105,1220,1,1,NA,0,46,40,NA,503,515,1,83,2,2,5,64,50,832,0,NA,211Fc,41.507173,-74.684721,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+611077375126144,2020,36,8,111,249,1,1,NA,0,32,30,NA,505,502,1,84,1,2,6,61,50,832,0,NA,211Ia,42.021922000000004,-74.170073,Northern red oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+611077591126144,2020,36,4,41,5594,1,1,NA,1,31,30,NA,123,124,1,85,1,3,4,44,50,97,0,NA,M211Dd,43.676104,-74.520697,Red spruce,120,Spruce / fir group,Adirondacks,Spruce-fir
+724937439290487,2021,36,3,49,386,1,1,NA,0,31,30,NA,121,121,1,71,1,3,3,62,50,12,0,NA,211Jc,43.703506,-75.540281,Balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+611077460126144,2020,36,8,105,4890,1,1,NA,0,46,40,NA,515,515,1,65,1,2,5,70,50,832,0,NA,211Fc,41.539347,-75.000526,Chestnut oak / black oak / scarlet oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+611077312126144,2020,36,8,27,5833,1,1,NA,1,21,20,NA,506,520,1,81,1,3,5,67,50,833,0,NA,221Ae,41.516719,-73.775892,Yellow-poplar / white oak / northern red oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+611077635126144,2020,36,1,89,6156,1,1,NA,0,46,40,NA,125,125,1,60,3,1,7,NA,NA,NA,0,NA,M211Dc,44.248246,-74.660391,Black spruce,120,Spruce / fir group,Adirondacks,Spruce-fir
+611077693126144,2020,36,1,89,5505,1,1,NA,0,46,40,NA,123,123,1,73,2,2,4,46,50,95,0,NA,M211Da,44.350723,-74.905961,Red spruce,120,Spruce / fir group,Adirondacks,Spruce-fir
+724937456290487,2021,36,4,31,1495,1,1,NA,0,46,40,NA,127,121,1,70,2,2,3,66,50,12,0,NA,M211De,44.005517,-73.509478,Northern white-cedar,120,Spruce / fir group,Adirondacks,Spruce-fir
+724937579290487,2021,36,8,103,4733,1,1,NA,1,32,30,NA,510,510,1,85,2,2,6,NA,NA,NA,0,NA,221An,41.002954,-72.153588,Scarlet oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+724937161290487,2021,36,8,105,4578,1,1,NA,0,46,40,NA,505,503,1,89,1,3,6,51,50,318,0,NA,221Bd,41.630879,-74.409713,Northern red oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+724937278290487,2021,36,1,33,1630,1,1,NA,1,31,30,NA,124,124,1,86,2,2,3,63,50,97,0,NA,M211Dc,44.427248,-74.155006,Red spruce / balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+724937578290487,2021,36,8,103,1192,1,1,NA,1,23,20,NA,520,520,1,103,1,3,6,59,50,802,0,NA,221An,40.716708,-73.214951,Mixed upland hardwoods,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+724937480290487,2021,36,8,95,1419,1,1,NA,0,31,30,NA,505,503,1,94,1,3,5,64,50,833,0,NA,211Ib,42.565614,-74.45035,Northern red oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+724937080290487,2021,36,1,33,97,1,1,NA,0,46,40,NA,125,124,1,46,2,2,4,47,50,95,0,NA,M211Da,44.417892,-74.500858,Black spruce,120,Spruce / fir group,Adirondacks,Spruce-fir
+724937338290487,2021,36,3,43,3050,1,1,NA,0,46,40,NA,121,121,1,64,2,3,4,57,50,12,0,NA,M211Db,43.26629,-74.904354,Balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+724937556290487,2021,36,8,27,3177,1,1,NA,1,21,20,NA,502,520,1,96,1,3,5,85,50,621,0,NA,221Ae,41.548986,-73.710874,Chestnut oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+724937567290487,2021,36,8,119,218,1,1,NA,0,46,40,NA,503,503,1,75,1,3,5,59,50,833,0,NA,221Ae,40.957683,-73.759951,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+724936920290487,2021,36,3,43,4321,1,1,NA,1,31,30,NA,123,123,1,100,1,3,4,55,50,97,0,NA,M211Db,43.817189,-75.112149,Red spruce,120,Spruce / fir group,Adirondacks,Spruce-fir
+724936889290487,2021,36,8,111,1846,1,1,NA,0,32,30,NA,520,809,1,95,1,3,5,76,50,832,0,NA,211Ia,42.075593,-74.262244,Mixed upland hardwoods,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+724937131290487,2021,36,8,39,2686,1,1,NA,0,46,40,NA,515,515,1,75,1,3,5,73,50,837,0,NA,211Ib,42.281427,-73.949245,Chestnut oak / black oak / scarlet oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+724937104290487,2021,36,8,95,3696,1,1,NA,0,46,40,NA,503,520,1,90,1,3,5,57,50,833,0,NA,211Ib,42.632102,-74.282012,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+724937113290487,2021,36,8,27,4902,1,1,NA,0,46,40,NA,503,503,1,55,1,3,5,62,50,837,0,NA,221Ba,41.877438,-73.879529,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+724937222290487,2021,36,3,43,4546,1,1,NA,0,46,40,NA,124,124,1,86,1,3,5,45,50,12,0,NA,M211Dd,43.656141,-74.863738,Red spruce / balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+816199959290487,2022,36,4,31,4870,1,1,NA,1,31,30,NA,121,121,1,87,2,2,4,46,50,12,0,NA,M211Df,44.185161,-73.894498,Balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+724937134290487,2021,36,8,111,453,1,1,NA,0,46,40,NA,503,515,1,78,1,2,5,57,50,837,0,NA,221Ba,42.042949,-73.978285,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+724936892290487,2021,36,8,27,2850,1,1,NA,1,31,30,NA,505,505,1,72,2,2,6,51,50,833,0,NA,221Ae,41.488607,-73.943387,Northern red oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+724936903290487,2021,36,4,31,3598,1,1,NA,1,31,30,NA,121,902,1,109,2,2,5,81,50,375,0,NA,M211Df,44.270159,-73.869441,Balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+724936904290487,2021,36,4,31,1784,1,1,NA,0,46,40,NA,127,123,1,118,1,3,4,52,50,241,0,NA,M211Dd,43.965568,-74.071541,Northern white-cedar,120,Spruce / fir group,Adirondacks,Spruce-fir
+724937430290487,2021,36,4,31,4210,1,1,NA,1,31,30,NA,124,124,1,64,2,2,3,63,50,12,0,NA,M211Dd,43.893091,-73.960559,Red spruce / balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+724937141290487,2021,36,8,71,4544,1,1,NA,0,24,20,NA,503,504,1,100,1,3,5,76,50,832,0,NA,221Ae,41.351642,-74.053311,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+724937490290487,2021,36,1,19,5142,1,1,NA,0,46,40,NA,121,121,1,62,2,2,4,53,50,12,0,NA,M211Dc,44.838728,-73.81653,Balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+816199820290487,2022,36,1,33,5705,1,1,NA,0,46,40,NA,121,121,1,78,1,3,5,43,50,12,0,NA,M211Dc,44.544304,-74.084182,Balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+724937581290487,2021,36,8,103,5653,1,1,NA,1,32,30,NA,515,502,1,65,2,2,6,60,50,832,0,NA,221An,40.975509,-72.320519,Chestnut oak / black oak / scarlet oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+724937157290487,2021,36,8,111,3861,1,1,NA,0,46,40,NA,503,520,1,69,2,3,5,70,50,318,0,NA,211Fc,41.899013,-74.210707,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+724937575290487,2021,36,8,119,2935,1,1,NA,1,32,30,NA,503,503,1,69,1,3,5,72,50,837,0,NA,221Ae,41.268599,-73.899527,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+724937247290487,2021,36,1,89,2704,1,1,NA,0,46,40,NA,121,124,1,61,2,2,5,40,50,12,0,NA,211Eb,44.727296,-74.682736,Balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+1543492056290487,2025,36,8,105,774,1,1,NA,0,46,40,NA,515,502,1,103,1,3,5,66,50,832,0,NA,211Fc,41.55625,-74.516807,Chestnut oak / black oak / scarlet oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1543492198290487,2025,36,1,89,108,1,1,NA,0,46,40,NA,121,121,1,60,2,2,4,60,50,12,0,NA,M211Da,44.435522,-74.605293,Balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+1191495656290487,2023,36,8,27,1910,1,1,NA,0,46,40,NA,517,402,1,20,2,1,6,65,50,541,0,NA,221Ba,41.780949,-73.858383,Elm / ash / black locust,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1287127466290487,2024,36,8,71,5451,1,1,NA,0,46,40,NA,505,503,1,109,1,3,4,77,50,833,0,NA,211Fc,41.454036,-74.620631,Northern red oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1287127485290487,2024,36,8,105,196,1,1,NA,0,46,40,NA,503,503,1,93,1,3,6,63,50,802,0,NA,211Fc,41.541501,-74.545881,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1287127568290487,2024,36,1,33,6321,1,1,NA,0,46,40,NA,121,121,1,75,2,2,4,56,50,12,0,NA,M211Dc,44.57488,-73.960492,Balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+1543492709290487,2025,36,8,103,8238,1,1,NA,0,46,40,NA,503,520,1,83,1,3,5,74,50,531,0,NA,221An,41.071578,-72.360148,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1191496053290487,2023,36,8,27,5591,1,1,NA,0,31,30,NA,515,515,1,97,1,3,5,71,50,837,0,NA,221Bb,41.74467,-73.762528,Chestnut oak / black oak / scarlet oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1287127570290487,2024,36,1,33,580,1,1,NA,1,31,30,NA,121,125,1,107,3,2,4,47,50,97,0,NA,M211Dc,44.496439,-73.992539,Balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+1287127463290487,2024,36,8,111,1235,1,1,NA,0,46,40,NA,505,505,1,144,1,3,5,68,50,832,0,NA,211Ia,42.04451,-74.246492,Northern red oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1287127487290487,2024,36,8,105,3795,1,1,NA,0,46,40,NA,515,502,1,96,1,2,5,74,50,832,0,NA,211Fc,41.547393,-74.725106,Chestnut oak / black oak / scarlet oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1543492293290487,2025,36,8,105,6034,1,1,NA,0,46,40,NA,503,401,1,84,1,3,5,68,50,832,0,NA,211Fc,41.500715,-74.725603,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1191496070290487,2023,36,8,79,1210,1,1,NA,0,46,40,NA,505,502,1,87,1,3,5,74,50,833,0,NA,221Ae,41.454354,-73.614591,Northern red oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1287127853290487,2024,36,8,87,2800,1,1,NA,0,46,40,NA,505,503,1,98,1,3,5,61,50,833,0,NA,221Ae,41.263029,-73.995271,Northern red oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1287127708290487,2024,36,4,41,860,1,1,NA,1,31,30,NA,124,124,1,70,1,2,4,46,50,97,0,NA,M211Dd,43.797889,-74.148436,Red spruce / balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+1543492285290487,2025,36,8,111,1458,1,1,NA,0,46,40,NA,513,513,1,48,1,2,4,76,50,901,0,NA,211Ia,42.108545,-74.365291,Black locust,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1543492483290487,2025,36,4,41,407,1,1,NA,1,31,30,NA,121,124,1,88,1,3,4,49,50,12,0,NA,M211Dd,43.735029,-74.522875,Balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+1287127849290487,2024,36,8,27,8206,1,1,NA,0,46,40,NA,502,505,1,150,1,3,6,58,50,832,0,NA,221Ae,41.550174,-73.693782,Chestnut oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1287127852290487,2024,36,8,71,1248,1,1,NA,1,31,30,NA,503,520,1,75,1,3,4,75,50,833,0,NA,221Ae,41.32747,-73.989408,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1543492268290487,2025,36,8,111,5608,1,1,NA,1,31,30,NA,505,503,1,86,1,3,5,62,50,833,0,NA,211Ia,42.001545,-74.215503,Northern red oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1543492273290487,2025,36,8,111,6445,1,1,NA,0,46,40,NA,503,503,1,105,1,3,5,59,50,833,0,NA,211Fc,41.707002,-74.437393,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1543492259290487,2025,36,8,71,3981,1,1,NA,1,31,30,NA,515,502,1,108,1,3,5,69,50,832,0,NA,221Ae,41.166977,-74.235744,Chestnut oak / black oak / scarlet oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+816199436290487,2022,36,1,19,3603,1,1,NA,0,46,40,NA,127,127,1,62,2,2,4,65,50,129,0,NA,211Ea,44.793187,-73.441436,Northern white-cedar,120,Spruce / fir group,Adirondacks,Spruce-fir
+1191495907290487,2023,36,1,89,2361,1,1,NA,0,46,40,NA,123,123,1,76,1,2,3,56,50,97,0,NA,M211Da,44.409083,-74.85059,Red spruce,120,Spruce / fir group,Adirondacks,Spruce-fir
+1191495792290487,2023,36,3,65,624,1,1,NA,0,46,40,NA,126,381,1,32,1,2,6,54,50,71,0,NA,211Ja,43.46804,-75.285688,Tamarack,120,Spruce / fir group,Adirondacks,Spruce-fir
+1287127840290487,2024,36,8,119,1238,1,1,NA,1,32,30,NA,503,503,1,103,1,3,5,79,50,802,0,NA,221Ae,41.337423,-73.823037,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1543492219290487,2025,36,4,31,6502,1,1,NA,1,31,30,NA,124,124,1,102,2,2,5,38,50,97,0,NA,M211Df,44.174066,-73.694606,Red spruce / balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+1543492696290487,2025,36,8,79,6583,1,1,NA,1,31,30,NA,502,502,1,113,1,2,6,NA,NA,NA,0,NA,221Ae,41.361535,-73.945655,Chestnut oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1543492484290487,2025,36,4,41,8321,1,1,NA,1,31,30,NA,126,126,1,94,3,2,5,59,50,71,0,NA,M211Dc,43.822313,-74.667914,Tamarack,120,Spruce / fir group,Adirondacks,Spruce-fir
+816200076290487,2022,36,8,103,1250,1,1,NA,1,32,30,NA,503,510,1,76,2,3,6,57,50,802,0,NA,221An,40.856467,-72.981711,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+816200094290487,2022,36,8,79,170,1,1,NA,1,31,30,NA,505,505,1,98,2,2,5,62,50,833,0,NA,221Ae,41.468006,-73.942441,Northern red oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+816200123290487,2022,36,1,33,4294,1,1,NA,1,31,30,NA,127,127,1,115,1,3,5,63,50,71,0,NA,M211Dc,44.127665,-74.342313,Northern white-cedar,120,Spruce / fir group,Adirondacks,Spruce-fir
+1543492598290487,2025,36,1,19,2097,1,1,NA,0,31,30,NA,121,121,1,96,2,2,5,39,50,12,0,NA,M211Dc,44.70511,-73.855533,Balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+1543492200290487,2025,36,4,41,1908,1,1,NA,0,46,40,NA,124,124,1,95,2,2,4,52,50,12,0,NA,M211Dc,44.086461,-74.494902,Red spruce / balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+1191495988290487,2023,36,1,19,478,1,1,NA,0,46,40,NA,121,121,1,70,1,2,4,49,50,12,0,NA,M211Dc,44.806277,-73.644946,Balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+1191496016290487,2023,36,8,105,4382,1,1,NA,0,46,40,NA,515,502,1,88,1,3,5,67,50,833,0,NA,211Fc,41.822278,-75.093565,Chestnut oak / black oak / scarlet oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1191495602290487,2023,36,1,33,6433,1,1,NA,0,46,40,NA,124,123,1,103,2,3,3,63,50,97,0,NA,M211Da,44.490075,-74.430937,Red spruce / balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+1191495671290487,2023,36,8,111,4943,1,1,NA,0,46,40,NA,503,503,1,87,1,3,4,79,50,833,0,NA,211Fc,41.927169,-74.186398,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1191495674290487,2023,36,8,111,4689,1,1,NA,0,46,40,NA,505,505,1,79,1,3,4,81,50,833,0,NA,211Ia,41.889448,-74.32692,Northern red oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1287127426290487,2024,36,8,111,6154,1,1,NA,0,46,40,NA,503,505,1,109,1,3,5,68,50,833,0,NA,221Ba,41.854437,-73.999486,White oak / red oak / hickory,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1287127818290487,2024,36,8,103,4668,1,1,NA,1,31,30,NA,510,510,1,97,1,3,5,60,50,806,0,NA,221An,40.855504,-73.226226,Scarlet oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1287127882290487,2024,36,4,31,185,1,1,NA,1,31,30,NA,121,121,1,89,2,2,5,44,50,12,0,NA,M211Df,44.093899,-74.098766,Balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+1287127480290487,2024,36,8,111,5493,1,1,NA,0,46,40,NA,519,519,1,55,2,2,4,84,50,833,0,NA,211Fc,41.739137,-74.449356,Red maple / oak,500,Oak / hickory group,Catskills-Lower Hudson,Oak-hickory
+1287127571290487,2024,36,1,33,1850,1,1,NA,0,46,40,NA,121,124,1,81,2,3,4,51,50,12,0,NA,M211Dc,44.452402,-74.083404,Balsam fir,120,Spruce / fir group,Adirondacks,Spruce-fir
+1287127526290487,2024,36,1,89,5351,1,1,NA,0,46,40,NA,123,124,1,76,1,3,4,44,50,97,0,NA,M211Da,44.259557,-74.766049,Red spruce,120,Spruce / fir group,Adirondacks,Spruce-fir
