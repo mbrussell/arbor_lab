@@ -14,4 +14,4 @@ We used tree-level observations from New York State (see [FIA data](https://apps
 2. Install the packages: `install.packages(c("tidyverse", "broom", "TOSTER", "boot"))`.
 3. Render the document.
 
-![Slide thumbnail for Arbor Lab 02](arbor_lab_02_thumbnail.jpg)
+![Slide thumbnail for Arbor Lab 02](arbor_lab_02_thumbnail.png)

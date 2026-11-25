@@ -14,4 +14,4 @@ We used tree-level observations from New York State (see [FIA data](https://apps
 2. Install the packages: `install.packages(c("tidyverse", "usmap", "readxl"))`.
 3. Render the document.
 
-![Slide thumbnail for Arbor Lab 01: allometric equations for tree carbon](arbor_lab_01_thumbnail.jpg)
+![Slide thumbnail for Arbor Lab 01: allometric equations for tree carbon](arbor_lab_01_thumbnail.png)
