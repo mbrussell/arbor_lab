@@ -1,0 +1,195 @@
+---
+title: "Arbor Lab 02: Testing for forest carbon differences from allometric equations (INSTRUCTOR copy)"
+author: "Matt Russell"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r}
+# Install packages to use
+
+library(tidyverse)
+library(broom)
+library(TOSTER)
+library(boot)
+
+# Set working directory
+
+my_wd <- "you/directory/here/arbor_lab/02"
+```
+
+```{r}
+# We're using Forest Inventory and Analysis data from New York State.
+# Read in tree data. These data only have live trees.
+# Units are in kg C/tree.
+
+tree <- read_csv(paste0(my_wd, "/data/fia_tree_carbon.csv")) 
+```
+
+```{r}
+# View number of tree observations by species (top 10 within each forest type)
+
+tree_spp <- tree |> 
+  group_by(forest_type, COMMON_NAME) |> 
+  summarize(num_trees = n()) |> 
+  arrange(desc(num_trees)) |> 
+  slice(1:10)
+tree_spp
+
+# Make a plot of number of trees by species within each forest type
+ggplot(tree_spp, aes(x = reorder(COMMON_NAME, num_trees), y = num_trees)) +
+  geom_bar(stat = "identity") +
+  facet_wrap(~ forest_type, scales = "free_y") +
+  labs(x = "Species", y = "Number of trees") +
+  coord_flip() +
+  theme_bw() +
+  theme(axis.text.y = element_text(size = 14))
+``` 
+
+```{r}
+# Calculate carbon at the stand level
+# Multiply by tree expansion factor (x TPA_UNADJ), convert to metric tons (x 0.001), and apply CO2 conversion factor (x 3.664)
+
+stand <- tree |> 
+  group_by(forest_type, STATECD, COUNTYCD, PLOT, INVYR) |>
+  summarize(jenkins = sum(carbon_total_jenkins*TPA_UNADJ)*0.001*3.664,
+            crm = sum(carbon_total_crm*TPA_UNADJ)*0.001*3.664,
+            nsvb = sum(carbon_total_nsvb*TPA_UNADJ)*0.001*3.664)    
+stand
+```
+
+```{r}
+# Visualize differences in carbon estimates at the stand level
+# Format data "long" for plotting
+
+stand_long <- stand |> 
+  pivot_longer(cols = c(jenkins, crm, nsvb), names_to = "method", values_to = "carbon")
+
+# Make a density plot of carbon estimates by method
+ggplot(stand_long, aes(x = carbon, fill = method, color = method)) +
+  geom_density(alpha = 0.3) +
+  facet_wrap(~ forest_type) +
+  labs(x = "Carbon (mtCO2e/ac)",
+       y = "Density",
+       fill = "Method",
+       color = "Method") +
+  theme_bw() +
+  theme(legend.text = element_text(size = 14),
+        strip.text = element_text(size = 14))
+```
+
+
+```{r}
+# Method 1. Classic statistical test (t-test) 
+
+# Get a dataset only for spruce-fir stands
+stand_sf <- stand |> 
+  filter(forest_type == "Spruce-fir")
+
+# Check the normality of the differences
+ggplot(stand_sf, aes(sample = jenkins - nsvb)) +
+  stat_qq() +
+  stat_qq_line(color = "red") +
+  labs(x = "Theoretical quantiles",
+       y = "Sample quantiles (Jenkins − NSVB, mtCO2e/ac)",
+       title = "Normal Q-Q plot") +
+  theme_bw()
+
+# Conduct a paired t-test to compare the mean of the Jenkins and NSVB estimates for the spruce-fir forest type
+t.test(stand_sf$jenkins, stand_sf$nsvb, paired = TRUE) 
+```
+
+
+```{r}
+# Method 2. Equivalence tests (Two one-sided tests) 
+
+# Examines whether the mean of the Jenkins estimates is equivalent to the mean of the NSVB estimates. 
+# Define the equivalence margin as 20% of the standard deviation of the difference between both predictions
+delta <- sd(stand_sf$jenkins - stand_sf$nsvb) * 0.2
+
+# Set the TOST equivalence bounds and perform the test
+tost_result <- tsum_TOST(
+  m1 = mean(stand_sf$jenkins),      
+  sd1 = sd(stand_sf$jenkins),
+  n1 = nrow(stand_sf),
+
+  m2 = mean(stand_sf$nsvb),  
+  sd2 = sd(stand_sf$nsvb),  
+  n2 = nrow(stand_sf),
+  
+  low_eqbound = -delta,
+  high_eqbound = delta,
+  eqbound_type = "raw"      
+)
+
+tost_result
+
+# Conduct a paired t-test and visualize the 95% confidence interval for the mean difference
+tt95 <- t.test(stand_sf$jenkins, stand_sf$nsvb, paired = TRUE) |>
+  tidy()
+
+# Plot the mean difference with the 95% confidence interval and equivalence region
+ggplot(tt95, aes(y = "Jenkins − NSVB")) +
+  annotate("rect", xmin = -delta, xmax = delta, ymin = -Inf, ymax = Inf,
+           fill = "blue", alpha = 0.2) +
+  geom_vline(xintercept = 0, linetype = "dashed") +
+  geom_pointrange(aes(x = estimate, xmin = conf.low, xmax = conf.high),
+                  linewidth = 0.8, size = 0.8) +
+  scale_x_continuous(limits = c(-delta * 1.5, max(tt95$conf.high, delta) * 1.2)) +
+  labs(x = "Mean difference (mtCO2e/ac)", y = NULL,
+       title = "Equivalence test (TOST)",
+       caption = "Shaded = equivalence region (+/- delta)") +
+  theme_bw()
+```
+
+
+```{r}
+# Method 3. Bootstrap resampling
+
+# Bootstrap confidence interval for the mean 
+boot_mean <- function(data, indices) {
+  mean(data[indices])
+}
+
+# Calculate bootstrap confidence intervals for each estimate
+
+set.seed(11252026)
+run_boot_ci <- function(data, label, R = 5000) {
+  b <- boot(data = data, statistic = boot_mean, R = R)
+  ci <- boot.ci(b, type = "perc") 
+  tibble(
+    dataset = label,
+    boot_mean = mean(b$t),
+    lower_95 = ci$percent[4],
+    upper_95 = ci$percent[5]
+  )
+}
+
+# Run for each dataset
+boot_jenkins <- run_boot_ci(stand_sf$jenkins, "Jenkins")
+boot_nsvb <- run_boot_ci(stand_sf$nsvb, "NSVB")
+boot_combined <- run_boot_ci(stand_sf$jenkins - stand_sf$nsvb, "Difference")
+
+boot_summary <- rbind(boot_jenkins, boot_nsvb, boot_combined)
+boot_summary
+
+# Reorder datasets for plotting
+boot_summary <- boot_summary %>%
+  mutate(dataset = factor(dataset, levels = c("Difference", "Jenkins", "NSVB")))
+
+# Plot differences in bootstrapped means
+ggplot(boot_summary, aes(x = dataset, y = boot_mean, color = dataset)) +
+  geom_point(size = 3) +
+  geom_errorbar(aes(ymin = lower_95, ymax = upper_95), width = 0.15, linewidth = 0.8) +
+  geom_text(aes(label = sprintf("%.1f", boot_mean)),
+    vjust = -1.2, size = 3.5, show.legend = FALSE) +
+  labs(title = "Bootstrapped 95% confidence intervals",
+       caption = "Bootstrap mean with 95% confidence intervals",
+       x = NULL,
+       y = "Mean CO2 (mtCO2-e/ac)") +
+  coord_flip() +
+  theme_bw() +
+  theme(legend.position = "none",
+        axis.text = element_text(size = 14),
+        plot.title = element_text(face = "bold"))
+```
